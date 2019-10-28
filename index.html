@@ -152,12 +152,12 @@
 
 			// Not sure if we can test for this???
 			function random(){
-				var grayScaleValue = Math.random()*100 +"%";
-				var skewXValue = Math.random()*100 +"deg"
+				var random = Math.random()*100
+				var grayScaleValue = random +"%";
+				var skewXValue = random +"deg"
 				vid.style.setProperty("filter", "grayscale("+grayScaleValue+")");
 				vid.style.setProperty("transform", "skewX("+skewXValue+")");
-				console.log("Grayscale is " + grayScaleValue);
-				console.log("skewXValue is " + skewXValue);
+				console.log("Grayscale and skewX are " + random);
 				// Use setProperty to change the grayscale filder and transform properties of the video.
 				// Log what the new values are to the console.
 			}
